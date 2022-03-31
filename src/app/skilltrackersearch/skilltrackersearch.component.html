@@ -1,0 +1,19 @@
+<p>Admin Panel</p>
+<form (ngSubmit)="onSubmit(skilltrackerform)" #skilltrackerform="ngForm">
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name"   [(ngModel)]="model.name" name="name">
+    </div>
+    <div class="form-group">
+        <label for="associateId">AssociateId</label>
+        <input type="text" class="form-control" id="associateId" [(ngModel)]="model.associateId" name="associateId">
+    </div>
+    <div class="form-group">
+        <label for="skill">Skill</label>
+        <input type="text" class="form-control" id="skill" [(ngModel)]="model.skillName" name="skillName">
+    </div>
+
+    <button type="submit" class="btn btn-success" [disabled]="!skilltrackerform.form.valid" >Submit</button>
+</form>
+
+

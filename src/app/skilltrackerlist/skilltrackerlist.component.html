@@ -1,0 +1,48 @@
+<p>skilltrackerlist works!</p>
+<div class="container-sm p-3 my-3 border">
+    <table class="table table-bordered " style="border-color:black">
+        
+        <tbody>
+          <tr  *ngFor="let skillProfile of skillProfileList">
+            <td >
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                          <th scope="row">Name </th>
+                          <th>{{skillProfile.profileName}}</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">Id </th>
+                            <th>{{skillProfile.associateId}}</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">Email</th>
+                            <th>{{skillProfile.emailId}}</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">Phone</th>
+                            <th>{{skillProfile.phone}}</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+               
+            <td>
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr *ngFor="let skill of skillProfile.skills">
+                          <th scope="row">{{skill.skillName}}</th>
+                          <th>{{skill.level}}</th>
+                        </tr>
+                    </tbody>
+                </table> 
+            </td>
+           
+          </tr>
+        </tbody>
+      </table>
+    
+</div>
+
+
+

@@ -1,0 +1,13 @@
+import {Skill} from './skill';
+import {Profile} from './profile';
+
+export interface SkillProfile{
+    
+     skills:Skill[];
+     profileName:string;
+     emailId:string;
+     associateId:string;
+     phone:string;
+
+    
+}

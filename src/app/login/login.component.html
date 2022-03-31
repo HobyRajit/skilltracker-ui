@@ -1,0 +1,24 @@
+<div class="shadow container w-25" style="margin-top:120px">
+ <form>
+    <div>
+        <label for="email">Email</label>
+        <br />
+        <input type="email" name="email" required placeholder="Enter your email" 
+        [(ngModel)]="email">
+        
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <br />
+        <input type="password" name="password" required placeholder="Enter password"
+        [(ngModel)]="password">
+    </div>
+    <div>
+        <br />
+        <button (click)="loginWithCognito()" class="btn btn-primary btn-block" type="submit">
+            Log in
+        </button>
+    </div>
+</form>
+<p class="text-dark mb-0"><a href="/sign-up" class="text-primary-ml-1">Sign up now</a></p>
+</div>
